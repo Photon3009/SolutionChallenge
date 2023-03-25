@@ -2,7 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:heatlth1/pages/chat_screen.dart';
 import 'package:heatlth1/pages/chatbot_page.dart';
+import 'package:heatlth1/pages/webview_page.dart';
 import 'package:heatlth1/theme/style.dart';
 import 'package:provider/provider.dart';
 
@@ -34,8 +36,9 @@ class _HomePageState extends State<HomePage> {
     MyHomePage(),
     EmergencyPage(),
     LocateTestPage(),
-    ChatBotPage(),
-    SchemesPage(),
+    ChatScreen(),
+    WebViewApp(),
+    // SchemesPage(),
   ];
   @override
   Widget build(BuildContext context) {
